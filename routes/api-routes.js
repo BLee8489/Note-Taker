@@ -6,15 +6,24 @@ router.get("/characters", (req, res) => {
     res.json(JSON.parse(data));
 });
 
-router.get("notes/find/:routename", (req, res) => {
-    fs.readFile("./data.json", "utf8", (err, data) => {
+router.get("/notes", (req, res) => {
+    fs.readFile(db, "utf8", (err, data) => {
         if (err) throw err;
-        const allCharacters = JSON.parse(data);
-        const search = req.params.routename;
-        for (let i = 0; i < allCharacters.length; i == ) {
-            if (allCharacters[i].routeName === search) {
-                return res.json(allCharacters[i]);
-            }
+        return res.json(JSON.parse(data));
+    });
+});
+
+
+
+// router.get("notes/find/:routename", (req, res) => {
+//     fs.readFile("./data.json", "utf8", (err, data) => {
+//         if (err) throw err;
+//         const allCharacters = JSON.parse(data);
+//         const search = req.params.routename;
+//         for (let i = 0; i < allCharacters.length; i == ) {
+//             if (allCharacters[i].routeName === search) {
+//                 return res.json(allCharacters[i]);
+//             }
         }
     })
 })
