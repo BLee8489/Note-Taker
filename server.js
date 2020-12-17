@@ -8,6 +8,7 @@ const clientRoutes = require("./routes/client-routes")
 //set up to receive JSON and string data
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
+app.use(express.static("public"));
 
 //routes as middleware
 app.use("/api", apiRoutes);

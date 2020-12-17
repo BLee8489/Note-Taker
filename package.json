@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/BLee8489/Note-Taker#readme",
   "dependencies": {
-    "inquirer": "^7.3.3"
+    "express": "^4.17.1",
+    "inquirer": "^7.3.3",
+    "nanoid": "^3.1.20"
   }
 }
