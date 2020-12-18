@@ -43,7 +43,7 @@ router.delete("/notes/:id", (req, res) => {
         fs.writeFile("./db/db.json", JSON.stringify(result), (err) =>{
             if (err) res.json ({ err: "error deleting"});
             res.json(result);
-            res.json({msg:"successfully deleted"});
+            // res.json({msg:"successfully deleted"});
         });
     });
 });
