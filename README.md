@@ -20,3 +20,5 @@ MOCK-UP:
 
 
 DEPPLOYED APP:
+
+https://note-taking-time.herokuapp.com/
