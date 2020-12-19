@@ -16,6 +16,8 @@ TEST INSTRUCTIONS:
 When running npm start it should open up your Note Taker on local host, and the user will be able to ENTER, SAVE, and DELETE notes. 
 
 MOCK-UP:
+https://drive.google.com/file/d/1NbFKcwt6OCl0EzSS8DmcuiUD_q7hct7z/view?usp=sharing
+
 ![Screen Shot 2020-12-19 at 10 28 27 AM](https://user-images.githubusercontent.com/71522463/102696944-fdb96000-41e6-11eb-8ab4-253eba7d46d5.png)
 
 
