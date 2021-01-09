@@ -12,7 +12,7 @@ app.use(express.static("public"));
 
 //routes as middleware
 app.use("/api", apiRoutes);
-app.use("/", clientRoutes);
+app.use(clientRoutes);
 
 // server listening
 app.listen(PORT, () => console.log(`listening at http://localhost:${PORT}`));
